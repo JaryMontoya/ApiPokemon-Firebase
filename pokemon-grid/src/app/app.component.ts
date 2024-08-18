@@ -4,14 +4,14 @@ import { PokemonService } from './pokemon.service';
 import { PokemonDialogComponent } from './pokemon-dialog/pokemon-dialog.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TitleCasePipe } from '@angular/common';
+import { CommonModule, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeaderComponent, FooterComponent, PokemonDialogComponent, TitleCasePipe ]
+  imports: [HeaderComponent, FooterComponent, PokemonDialogComponent, TitleCasePipe, CommonModule]
 })
 export class AppComponent implements OnInit {
   pokemons: any[] = [];
