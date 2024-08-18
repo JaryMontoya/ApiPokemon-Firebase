@@ -1,4 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos generales para toda la app */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header con Material Toolbar */
+  .app-header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+  
+  /* Contenido Principal */
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Footer */
+  .app-footer {
+    background-color: #2a75bb;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: #ffcb05;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon {
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .pokemon:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pokemon img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s;
+  }
+  
+  .pokemon:hover img {
+    transform: rotate(5deg);
+  }
+  
+  .pokemon p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Pokemon Solid', sans-serif;
+  }
+  
+  .pokemon small {
+    color: #555;
+    font-size: 0.9rem;
+  }
+  

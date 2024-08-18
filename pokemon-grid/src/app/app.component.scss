@@ -1,2 +1,59 @@
 @use '@angular/material' as mat;
 @include mat.core();
+
+/* General styles for the app container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header and footer styles */
+  app-header,
+  app-footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Main section styles */
+  main {
+    flex: 1;
+    padding: 1rem;
+    background-color: #e9ecef;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .pokemon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pokemon-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pokemon-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+  }
+  

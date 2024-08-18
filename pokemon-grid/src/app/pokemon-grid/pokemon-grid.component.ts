@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, TitleCasePipe } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { PokemonService } from '../pokemon.service';
 import { HttpClientModule } from '@angular/common/http';
 
+
 interface Pokemon {
+id: any;
   name: string;
   types: { type: { name: string } }[];
   sprites: { front_default: string };
@@ -13,11 +15,14 @@ interface Pokemon {
 @Component({
   selector: 'app-pokemon-grid',
   standalone: true,
-  imports: [CommonModule, MatCardModule, HttpClientModule],
+  imports: [CommonModule, MatCardModule, HttpClientModule, TitleCasePipe],
   templateUrl: './pokemon-grid.component.html',
-  styleUrls: ['./pokemon-grid.component.scss']
+  styleUrls: ['./pokemon-grid.component.css']
 })
 export class PokemonGridComponent implements OnInit {
+showPokemonDetails(_t4: Pokemon) {
+throw new Error('Method not implemented.');
+}
   pokemons: Pokemon[] = [];
 
   constructor(private pokemonService: PokemonService) { }

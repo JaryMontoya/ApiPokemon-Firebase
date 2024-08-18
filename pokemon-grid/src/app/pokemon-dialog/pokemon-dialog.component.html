@@ -1,6 +1,6 @@
 <h2 mat-dialog-title>{{ data.name | titlecase }}</h2>
 <mat-dialog-content>
-  <img [src]="data.sprites.front_default" alt="{{data.name}}">
+  <img [src]="data.sprites.front_default" alt="{{data.name}}" style="width: 150px; height: 150px;">
   <p>Height: {{ data.height / 10 }} m</p>
   <p>Weight: {{ data.weight / 10 }} kg</p>
   <p>Types: {{ types | titlecase }}</p>

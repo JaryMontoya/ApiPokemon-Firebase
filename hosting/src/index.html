@@ -1,13 +1,44 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ApipokemonAngularf</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+<div class="app-container">
+  <!-- Header con barra de navegación -->
+  <mat-toolbar color="primary" class="app-header">
+    <mat-toolbar-row>
+      <span class="logo">Pokémon Grid</span>
+      <span class="spacer"></span>
+      <nav>
+        <a mat-button routerLink="/">Home</a>
+        <a mat-button href="https://pokeapi.co" target="_blank">PokéAPI</a>
+        <a mat-button routerLink="/about">About</a>
+      </nav>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <!-- Contenido Principal -->
+  <main>
+    <app-pokemon-grid></app-pokemon-grid>
+  </main>
+
+  <!-- Footer con enlaces e información adicional -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Pokémon Grid</h3>
+        <p>Una aplicación para explorar diferentes Pokémon utilizando la PokéAPI.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="https://pokeapi.co" target="_blank">PokéAPI</a></li>
+          <li><a href="https://www.pokemon.com/" target="_blank">Sitio Oficial de Pokémon</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: ejemplo@pokemon.com??</p>
+        <p>Teléfono: +1 800 123 4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pokémon Grid. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</div>

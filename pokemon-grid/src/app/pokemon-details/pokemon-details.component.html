@@ -1,0 +1,11 @@
+<h2>{{ data.name | titlecase }} (#{{ data.id }})</h2>
+<img [src]="data.sprites.front_default" [alt]="data.name">
+<p>Height: {{ data.height }} decimetres</p>
+<p>Weight: {{ data.weight }} hectograms</p>
+<p>Base experience: {{ data.base_experience }}</p>
+<div>
+  <h3>Abilities</h3>
+  <ul>
+    <li *ngFor="let ability of data.abilities">{{ ability.ability.name }}</li>
+  </ul>
+</div>

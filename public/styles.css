@@ -1,0 +1,233 @@
+/* Estilos generales para toda la app */
+/* styles.css */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; /* O el tema que prefieras */
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header con Material Toolbar */
+  .app-header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+  
+  /* Contenido Principal */
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Footer */
+  .app-footer {
+    background-color: #2a75bb;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: #ffcb05;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .app-header {
+    background: linear-gradient(45deg, #2a75bb, #ffcb05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Pokemon Solid', sans-serif; /* Añadir una tipografía personalizada */
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b;
+  }
+
+  .app-footer {
+    background: linear-gradient(45deg, #2a75bb, #3a98ff);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #ffcb05;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    font-family: 'Pokemon Solid', sans-serif; /* Añadir una tipografía personalizada */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #ffcb05;
+  }
+  
+  .footer-section a {
+    color: #ffcb05;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  /* General styles for the app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and footer styles */
+app-header,
+app-footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Main section styles */
+main {
+  flex: 1;
+  padding: 1rem;
+  background-color: #e9ecef;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pokemon-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+}
+
+.pokemon-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+}
+
+  
