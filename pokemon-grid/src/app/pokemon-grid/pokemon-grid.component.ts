@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { PokemonService } from '../pokemon.service';
+import { HttpClientModule } from '@angular/common/http';
 
 interface Pokemon {
   name: string;
@@ -12,7 +13,7 @@ interface Pokemon {
 @Component({
   selector: 'app-pokemon-grid',
   standalone: true,
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatCardModule, HttpClientModule],
   templateUrl: './pokemon-grid.component.html',
   styleUrls: ['./pokemon-grid.component.scss']
 })
